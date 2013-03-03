@@ -1,0 +1,18 @@
+@(message: String)
+
+@main("Welcome to Play 2.0") {
+    	
+    <script src='@routes.Assets.at("javascripts/index.js")'></script>
+    
+     
+    @message
+    
+    <ul id="books"> </ul>
+    
+    <form action="@routes.Application.addBook()" method="POST">
+    	<input name="name"/>
+    	<input type="submit"/>
+    </form>
+     
+    
+}
